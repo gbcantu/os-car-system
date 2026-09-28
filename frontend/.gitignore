@@ -1,0 +1,123 @@
+# =========================
+# Logs
+# =========================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================
+# Dependencies
+# =========================
+node_modules/
+frontend/node_modules/
+
+# =========================
+# Build
+# =========================
+dist/
+dist-ssr/
+release/
+out/
+build/
+frontend/dist/
+frontend/dist-electron/
+dist-electron/
+
+# Electron Builder
+*.blockmap
+*.exe
+*.msi
+*.AppImage
+*.deb
+*.rpm
+*.dmg
+*.zip
+*.7z
+
+# Electron Forge
+electron-dist/
+electron-out/
+
+# =========================
+# Cache
+# =========================
+.cache/
+.parcel-cache/
+.eslintcache
+.vite/
+.vite-cache/
+*.tsbuildinfo
+
+# =========================
+# Coverage
+# =========================
+coverage/
+.nyc_output/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+secrets.env
+
+# =========================
+# Editor
+# =========================
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+*.suo
+*.user
+*.userossc
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.orig
+
+# =========================
+# Electron
+# =========================
+electron-dist/
+electron-out/
+
+# electron-builder configs
+builder-debug.yml
+builder-effective-config.yaml
+
+# =========================
+# Temporary
+# =========================
+tmp/
+temp/
+*.tmp
+
+# =========================
+# Misc
+# =========================
+*.bak
+*.swp
+*.swo
+
+# Keep project-level lockfiles and package.json tracked, but ignore npm/yarn state folders
+/.pnp.*
+
+# VSCode workspace storage
+/.vscode-test/
+
+# Mac / Windows thumbnail caches
+._*
+
+# =========================
+# OS
+# =========================
+Desktop.ini
+.vscode/

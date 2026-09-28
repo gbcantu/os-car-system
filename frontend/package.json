@@ -1,0 +1,66 @@
+{
+  "name": "os-car-system",
+  "private": true,
+  "version": "0.1.0",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "electron": "electron .",
+    "start": "concurrently \"vite\" \"electron .\"",
+    "dist": "npm run build && electron-builder --win --x64 --ia32"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.x.x",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.2.1",
+    "lucide-react": "^0.x.x",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.x.x",
+    "styled-components": "^6.4.3",
+    "zod": "^3.x.x"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "concurrently": "^9.0.0",
+    "electron": "^42.5.0",
+    "electron-builder": "^26.15.3",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.4"
+  },
+  "build": {
+    "appId": "com.oscarsystem.os",
+    "productName": "OS Car System",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json",
+      "src/assets/logo.ico"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64", "ia32"]
+        }
+      ],
+      "icon": "src/assets/logo.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowElevation": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "OS Car System"
+    },
+    "artifactName": "${productName}-setup-${version}-${arch}.${ext}"
+  }
+}

@@ -1,0 +1,65 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Arial, sans-serif;
+  font-size: 11pt;
+  color: #000;
+  background: #fff;
+  padding: 15mm;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #c8102e;
+  padding-bottom: 10pt;
+  margin-bottom: 12pt;
+}
+.company-name { font-size: 16pt; font-weight: 700; }
+.company-tagline {
+  font-size: 7pt;
+  color: #c8102e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.company-info { text-align: right; font-size: 9pt; color: #444; line-height: 1.6; }
+.os-title {
+  text-align: center;
+  font-size: 13pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1pt solid #ddd;
+  padding: 6pt;
+  background: #f8f8f8;
+  margin-bottom: 10pt;
+}
+.meta-row { display: flex; gap: 12pt; margin-bottom: 10pt; }
+.meta-box { flex: 1; border: 1pt solid #ddd; border-radius: 3pt; padding: 6pt 8pt; }
+.meta-label { font-size: 7pt; text-transform: uppercase; color: #888; display: block; margin-bottom: 2pt; }
+.meta-value { font-size: 10pt; font-weight: 600; }
+.meta-value-highlight { font-size: 14pt; font-weight: 700; color: #c8102e; }
+.section { margin-bottom: 10pt; }
+.section-title {
+  font-size: 8pt;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #888;
+  font-weight: 600;
+  border-bottom: 1pt solid #eee;
+  padding-bottom: 3pt;
+  margin-bottom: 6pt;
+}
+.info-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6pt; }
+.info-label { font-size: 7pt; color: #888; text-transform: uppercase; display: block; }
+.info-value { font-size: 10pt; font-weight: 500; }
+table { width: 100%; border-collapse: collapse; font-size: 9pt; margin-top: 6pt; }
+thead tr { background: #1a1a1a; color: #fff; }
+thead th { padding: 5pt 6pt; text-align: left; font-size: 8pt; text-transform: uppercase; }
+th.right, td.right { text-align: right; }
+tbody tr:nth-child(even) { background: #f8f8f8; }
+tbody tr { border-bottom: 0.5pt solid #e0e0e0; }
+tbody td { padding: 4pt 6pt; }
+.badge { display: inline-block; padding: 1pt 5pt; border-radius: 2pt; font-size: 7pt; font-weight: 700; text-transform: uppercase; }
+.badge-servico { background: rgba(200,16,46,0.12); color: #c8102e; }
+.badge-produto { background: rgba(0,0,0,0.08); color: #333; }
+.totals-row { display: flex; border: 1pt solid #ddd; border-radius:
